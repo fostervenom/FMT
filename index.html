@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login to Continue</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="background-wrap">
+  <div class="background"></div>
+</div>
+
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "fostervenom" && form.pwd.value == "Wind@0223")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+<form id="accesspanel" action="wait_sendingsrc_kill.html" method="post">
+  <h1 id="litheader">ANURAG R DIXIT</h1>
+  <div class="inset">
+    <p>
+      <input type="text" name="userid" id="email" placeholder="User Name">
+    </p>
+    <p>
+      <input type="password" name="pwd" id="password" placeholder="Access code">
+    </p>
+    <div style="text-align: center;">
+      <div class="checkboxouter">
+        <input type="checkbox" name="rememberme" id="remember" value="Remember">
+        <label class="checkbox"></label>
+      </div>
+      <label for="remember">I'm not a ROBOT</label>
+    </div>
+    <input class="loginLoginValue" type="hidden" name="service" value="login" />
+  </div>
+  <p class="p-container">
+    <input type="submit" onclick="return check(this.form)" name="Login" id="go" value="Authorize">
+  </p>
+</form>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
